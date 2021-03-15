@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TailF Assignment</title>
+    <script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+
+<Body>
+
+<div class="row">
+	<form class="form-inline">
+		<div class="form-group">
+			<label for="connect">Connect & Start getting logs:</label>
+			<button id="connect" class="btn btn-default" type="submit">Connect</button>
+			<button id="disconnect" class="btn btn-default" disabled="disabled">Disconnect</button>
+			<button id="startlogs" class="btn btn-default" type="submit">GetLogs</button>
+		</div>
+	</form>
+</div>
+
+<div class="row">
+	<table id="log" class="table table-striped">
+		<thead>
+			<tr>
+				<th>Logs Details</th>
+			</tr>
+		</thead>
+		<tbody id="logdetails"/>		
+	</table>
+</div>
+
+
+</Body>
+
+</html>
